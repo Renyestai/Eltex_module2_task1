@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "data_structure.h": "c",
+        "string.h": "c"
+    }
+}

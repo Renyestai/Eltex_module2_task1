@@ -18,9 +18,10 @@ int main()
     phoneBook PB, *ptr = &PB;
     int choice;
 
-    while (0)
+    while (1)
     {
-        printf("Menu for the phonebook:\n 1. Create an entry.\n 2. Edit an entry\n 3. Delete an entry ");
+        printf("Menu for the phonebook:\n 1. Create an entry.\n 2. Edit an entry\n 3. Delete an entry\n 4. Output an entry\n 5. Exit\n");
+    
         scanf("%d", &choice);
 
         switch (choice)
@@ -37,8 +38,10 @@ int main()
         case 4:
             PBOutput(ptr);
             break;
+        case 5:
+            return;
         default:
-            return 0;
+            printf("Invalid choice. Please enter a number between 1 and 5\n");
         }
 
     }
